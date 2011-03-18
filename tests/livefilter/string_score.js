@@ -1,11 +1,11 @@
 /*!
- * string_score.js: String Scoring Algorithm 0.1.9 
+ * string_score.js: String Scoring Algorithm 0.1.10 
  *
  * http://joshaven.com/string_score
  * https://github.com/joshaven/string_score
  *
  * Copyright (C) 2009-2011 Joshaven Potter <yourtech@gmail.com>
- * Copyright (C) 2010-2011 Yesudeep Mangalapilly <yesudeep@gmail.com>
+ * Special thanks to all of the contributors listed here https://github.com/joshaven/string_score
  * MIT license: http://www.opensource.org/licenses/mit-license.php
  *
  * Date: Tue Mar 1 2011
@@ -18,7 +18,7 @@
  */
 String.prototype.score = function(abbreviation, fuzziness) {
   // If the string is equal to the abbreviation, perfect match.
-  if (string == abbreviation) {return 1.0;}
+  if (this == abbreviation) {return 1;}
   //if it's not a perfect match and is empty return 0
   if(abbreviation == "") {return 0;}
 
